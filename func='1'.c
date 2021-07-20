@@ -1,3 +1,9 @@
+/*
+
+This the function in which the last value is always 1 whichever number you take
+
+*/
+
 #include <stdio.h>
 
 int odd_even(int num)
