@@ -8,12 +8,23 @@ num = int(input("Enter a number according to your computer status :"))
 a = 1
 
 d = 0
+x = num%2
+if(x==0):
+    x = num/50
+else:
+    x = (num+1)/50
 
+y = 1
+print("[", end="")
 for i in range(num):
     b = a+2
-    print(f"a = {a}, b = {b}")
+    # print(f"a = {a}, b = {b}")
+    if ((x*y) == i):
+        print("#", end="")
+        y = y + 1
+
     c = 1/a - 1/b
     d = d + c
     a = a + 4
-
-print(4*d)
+print("]")
+print("Value of pi is", 4*d)
